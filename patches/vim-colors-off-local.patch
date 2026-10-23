@@ -1,0 +1,40 @@
+diff --git a/colors/off.vim b/colors/off.vim
+index 84cfef1..494ac38 100644
+--- a/colors/off.vim
++++ b/colors/off.vim
+@@ -18,13 +18,15 @@ endif
+ let g:colors_name='off'
+ let colors_off_a_little = get(g:, 'colors_off_a_little', 0)
+ 
+-let s:black           = { "gui": "#212121", "cterm": "0"   }
++let s:black           = { "gui": "#0a0a0a", "cterm": "0"   }
+ let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
+ let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
+ let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
+ let s:light_black     = { "gui": "#424242", "cterm": "8"   }
+ let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
+-let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
++let s:subtle_black    = { "gui": "#141414", "cterm": "236" }
++let s:darker_black    = { "gui": "#2a2a2a", "cterm": "8"   }
++let s:darkest_black   = { "gui": "#3a3a3a", "cterm": "240" }
+ let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
+ let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
+ let s:subtle_gray     = { "gui": "#696969", "cterm": "250" }
+@@ -47,7 +49,7 @@ let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
+ 
+ if &background == "dark"
+   let s:bg              = s:black
+-  let s:bg_subtle       = s:light_black
++  let s:bg_subtle       = s:darker_black
+   let s:bg_subtle_comment = s:subtle_gray
+   let s:bg_very_subtle  = s:subtle_black
+   let s:norm            = s:lighter_gray
+@@ -56,7 +58,7 @@ if &background == "dark"
+   let s:cyan            = s:light_cyan
+   let s:green           = s:light_green
+   let s:red             = s:light_red
+-  let s:visual          = s:lighter_black
++  let s:visual          = s:darkest_black
+ else
+   let s:bg              = s:actual_white
+   let s:bg_subtle       = s:light_gray
